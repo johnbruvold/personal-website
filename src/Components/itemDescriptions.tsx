@@ -1,17 +1,23 @@
-import type { Item } from "./inventoryList"
+import type { Item } from "./inventoryList";
 interface Props {
-    item:Item
+  item: Item;
 }
-function ItemDescription({item}:Props) {
-return (
-<div className="inline-flex  size-full flex-col p-1 mx-2">
-    <img></img>
-    <div className="flex-1 size-min inline-flex flex-row gap-3">
-    {item.attribuites.map((attr) =>
-    <h3 className="border-r border-t">{attr}</h3>)}
+function ItemDescription({ item }: Props) {
+  return (
+    <div className=" h-full w-full  inline-flex flex-col gap-1.5">
+        <img
+          className="h-1/2 mix-blend-overlay grow flex  mx-auto"
+          src={`/src/assets/${item.image}`}
+        ></img>
+      <div className="  flex-shrink inline-flex flex-row gap-3">
+        {item.attribuites.map((attr) => (
+          <p className="size-min  border-r-2 text-nowrap border-t-2">{attr}</p>
+        ))}
+      </div>
+      <p className="basis-5/7 border-t-2 border-r-2 mask-b-to-50%">
+        {item.description}
+      </p>
     </div>
-    <p className="border size-full">{item.description}</p>
-</div>
-)
+  );
 }
-export default ItemDescription
+export default ItemDescription;
