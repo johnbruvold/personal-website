@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useState } from "react";
+import "./App.css";
+import InventoryList from "./Components/inventoryList";
+import ItemDescription from "./Components/itemDescriptions";
+import type { Item } from "./Components/inventoryList";
 function App() {
-  const [count, setCount] = useState(0)
+  var Menus = {
+    General: [{ itemName: "f", attribuites: ["dafads", "sadfasdfs"], description: "dsaf",image:[] }],
+    Experience: [],
+    Skills: [],
+    Projects: [],
+  };
 
+  const [currentMenu, setCurrentMenu] = useState("General");
+  const [currentItem, setCurrentItem] = useState({});
+  const handleSelectItem = (item: Item) => {
+    setCurrentItem(item);
+  };
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <body className="bg-[#926A25]">
+        <div className="flex flex-col absolute inset-4 border font-mono">
+          <div className="bg-[#926A25] flex-0 -mt-3 ml-2 size-min">
+            <h1 className="text-left">{currentMenu}</h1>
+          </div>
+          <div className="flex-3/4 border inline-flex">
+            <div className="flex-2">
+              <InventoryList
+                items={Menus[currentMenu as keyof {}]}
+                onSelectItem={handleSelectItem}
+              ></InventoryList>
+            </div>
+            <div className="flex-3 border">
+              <ItemDescription item={currentItem as Item}></ItemDescription>
+            </div>
+          </div>
+          <div className="flex-0 inline-grid grid-cols-4 grid-rows-1 gap-5 m-3 justify-items-center">
+            {Object.keys(Menus).map((menu) => (
+              <span
+                key={menu}
+                className="size-min border border-transparent hover:border-white hover:bg-white/50"
+                onClick={() => {
+                  setCurrentMenu(menu);
+                }}
+              >
+                {menu}
+              </span>
+            ))}
+          </div>
+        </div>
+      </body>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
