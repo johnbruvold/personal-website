@@ -1,6 +1,6 @@
 interface Item {
     itemName:string; 
-    attribuites: string[];
+    attribuites: {};
     description: string;
     image:string;
 }
@@ -10,9 +10,9 @@ interface Props{
 }
 function InventoryList({items,onSelectItem}:Props) {
     return (
-        <div className="">
+        <div className=" size-full">
             {items.map((item)=>
-            <h2 key={item.itemName} className = "text-left m-2 hover:bg-white/50" onMouseOver={()=>onSelectItem(item)}>{item.itemName}</h2>)}
+            <h2 key={item.itemName} className = "text-left text-nowrap hover:bg-white/50" onMouseOver={()=>onSelectItem(item)}>{item.itemName}</h2>)}
         </div>
     )
 

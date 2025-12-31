@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@theme {
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    100% {translate: 0% 100%;
+    }
+  }
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
