@@ -10,9 +10,9 @@ interface Props{
 }
 function InventoryList({items,onSelectItem}:Props) {
     return (
-        <div className=" size-full">
+        <div className="size-full inline-flex flex-col gap-1">
             {items.map((item)=>
-            <h2 key={item.itemName} className = "text-left text-nowrap hover:bg-white/50" onMouseOver={()=>onSelectItem(item)}>{item.itemName}</h2>)}
+            <h2 key={item.itemName} className = "-my-1 text-left h-min w-full text-nowrap hover:bg-white/50" onMouseOver={()=>onSelectItem(item)}>{item.itemName}</h2>)}
         </div>
     )
 
