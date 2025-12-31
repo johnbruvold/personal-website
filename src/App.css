@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @theme {
-  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
-  @keyframes fade-in-scale {
-    100% {translate: 0% 100%;
+  --animate-scroll: scroll 8s linear infinite;
+  @keyframes scroll {
+    100% {translate: 0% 100vh;
     }
   }
 }
