@@ -9,13 +9,30 @@ function App() {
     General: [
       {
         itemName: "About Me",
-        attribuites: {NAME:"JACK",YR: "SOPH.", WHERE: "U.C. Berkeley"},
-        description: "I'm a second-year Chemical Biology and Data Science double major(3.973 GPA) at the University of California, Berkeley. I am interested in many things, but in particular computational biology, neuroscience, machine learning, and statistics. Outside of academics, I love basketball, fashion, thrifting, sewing, poetry, and video games. Feel free to contact me at my email: johnbruvold@berkeley.edu.",
+        attribuites: { NAME: "JACK", YR: "JUNIOR", WHERE: "U.C. Berkeley" },
+        description:
+          "I'm a third-year Chemical Biology and Data Science double major(3.96 GPA) at the University of California, Berkeley. I am interested in many things, but in particular computational biology, neuroscience, machine learning, and statistics. Outside of academics, I love basketball, fashion, thrifting, sewing, poetry, and video games. Feel free to contact me at my email: johnbruvold@berkeley.edu.",
         image: "suit.png",
       },
-      {itemName:"Awards",attribuites:{},description:"Dean's Honors' List College of Chemistry Fall 2024(Top 10% of students within the College. SEED Honors Program, Top 1% of STEM Applicants to Berkeley.",image:"awards.png"},
-      {itemName:"LinkedIn",attribuites:{LNK:"https://www.linkedin.com/in/jack-bruvold/"},description:"Here's my LinkedIn",image:"LinkedIn.png"},
-      {itemName:"GitHub",attribuites:{LNK:"https://github.com/johnbruvold"},description:"Here's my GitHub account",image:"image.webp"}
+      {
+        itemName: "Awards",
+        attribuites: {},
+        description:
+          "Dean's Honors' List College of Chemistry Fall 2024(Top 10% of students within the College. SEED Honors Program, Top 1% of STEM Applicants to Berkeley.",
+        image: "awards.png",
+      },
+      {
+        itemName: "LinkedIn",
+        attribuites: { LNK: "https://www.linkedin.com/in/jack-bruvold/" },
+        description: "Here's my LinkedIn",
+        image: "LinkedIn.png",
+      },
+      {
+        itemName: "GitHub",
+        attribuites: { LNK: "https://github.com/johnbruvold" },
+        description: "Here's my GitHub account",
+        image: "image.webp",
+      },
     ],
     Experience: [
       {
@@ -111,7 +128,8 @@ function App() {
           TYPE: "WEBSITE/MODEL",
           LNK: "https://github.com/johnbruvold/Scary-Stealth-Startup",
         },
-        description: "In collaboration with Miguel Contreras, we developed a model that takes in a picture of a users face, determines common facial measurements, which is then used to determine facial attractiveness. Done with MediaPipe, OpenCV, and FastAPI",
+        description:
+          "In collaboration with Miguel Contreras, we developed a model that takes in a picture of a users face, determines common facial measurements, which is then used to determine facial attractiveness. Done with MediaPipe, OpenCV, and FastAPI",
         image: "hot-or-not.png",
       },
       {
@@ -127,8 +145,13 @@ function App() {
       },
       {
         itemName: "The NBA's Perimeter Problem",
-        attribuites: { WHEN: "SPRING '25", TYPE: "ARTICLE",LNK:"https://sportsanalytics.studentorg.berkeley.edu/articles/perimeter-problem.html" },
-        description: "The NBA doesn't have a good way to quantify perimeter defense, especially with a point value. I tried to make a new statistic by combining other stats together to measure a given players defensive value on the perimeter.",
+        attribuites: {
+          WHEN: "SPRING '25",
+          TYPE: "ARTICLE",
+          LNK: "https://sportsanalytics.studentorg.berkeley.edu/articles/perimeter-problem.html",
+        },
+        description:
+          "The NBA doesn't have a good way to quantify perimeter defense, especially with a point value. I tried to make a new statistic by combining other stats together to measure a given players defensive value on the perimeter.",
         image: "Comprehension.png",
       },
       {
@@ -138,7 +161,8 @@ function App() {
           TYPE: "WEBSITE/MODEL",
           LNK: "https://protein-prediction-myo5ouhu4bsclyjdhrweub.streamlit.app/",
         },
-        description: "A Streamlit app that predicts which of the 7 Enzyme Commission (EC) classes a protein belongs to from its sequence alone. Sequences pulled from UniProtKB are turned into features like amino acid composition, molecular weight, hydrophobicity, secondary structure, and 3-mer frequencies, then classified with a Random Forest or SVM. Paste in a protein or DNA sequence and get a prediction with per-class probabilities. Done with scikit-learn, Biopython, and Streamlit.",
+        description:
+          "A Streamlit app that predicts which of the 7 Enzyme Commission (EC) classes a protein belongs to from its sequence alone. Sequences pulled from UniProtKB are turned into features like amino acid composition, molecular weight, hydrophobicity, secondary structure, and 3-mer frequencies, then classified with a Random Forest or SVM. Paste in a protein or DNA sequence and get a prediction with per-class probabilities. Done with scikit-learn, Biopython, and Streamlit.",
         image: "LivingAnatomy.png",
       },
     ],
@@ -147,32 +171,36 @@ function App() {
       {
         itemName: "Life Science",
         attribuites: {},
-        description: ">3 years of wetlab exsperience. Great familiarity with: PCR, Gibson Assembly, ELISA, Gel Electrophoresis, Microscopy, Fluorescent Microscopy, Electrophysiology, STORM, Mammalian Cell Culture, Bacterial Cell Culture, Protein Engineering, Protein Purification, Metabolic Engineering, CRISPR, Primer Design, Cryo-EM, Structural Biology.",
+        description:
+          ">3 years of wetlab exsperience. Great familiarity with: PCR, Gibson Assembly, ELISA, Gel Electrophoresis, Microscopy, Fluorescent Microscopy, Electrophysiology, STORM, Mammalian Cell Culture, Bacterial Cell Culture, Protein Engineering, Protein Purification, Metabolic Engineering, CRISPR, Primer Design, Cryo-EM, Structural Biology.",
         image: "LivingAnatomy.png",
       },
       {
         itemName: "Chemistry",
-        attribuites: {
-        },
-        description: "2 years exsperience through U.C. Berkeley's College of Chemistry which has given me time to do many different techniques; Mass-Spec, HPLC, TLC, Column Chromatography, H-NMR, C-NMR, Liquid-Liquid Extraction,  Organic Synthesis, Dye Chemistry, Polymer Chemisty, Perfume Chemistry",
+        attribuites: {},
+        description:
+          "2 years exsperience through U.C. Berkeley's College of Chemistry which has given me time to do many different techniques; Mass-Spec, HPLC, TLC, Column Chromatography, H-NMR, C-NMR, Liquid-Liquid Extraction,  Organic Synthesis, Dye Chemistry, Polymer Chemisty, Perfume Chemistry",
         image: "labcoat.png",
       },
       {
         itemName: "Computational",
         attribuites: {},
-        description: "Languages: Python, JavaScript, C, HTML, CSS, & MATLAB. I also have familiarity with: PANDAS, MATPLOTLIB, NumPy, SciPy, MediaPipe, OpenCV, FastAPI, Linear Regression Models, Ridge Regression Models, k-NN Models, TailwindCSS, Git & Version Control. Outside of Computer and Data Science, I know how to CAD, 3D Animate(Blender), and some circuit design",
+        description:
+          "Languages: Python, JavaScript, C, HTML, CSS, & MATLAB. I also have familiarity with: PANDAS, MATPLOTLIB, NumPy, SciPy, MediaPipe, OpenCV, FastAPI, Linear Regression Models, Ridge Regression Models, k-NN Models, TailwindCSS, Git & Version Control. Outside of Computer and Data Science, I know how to CAD, 3D Animate(Blender), and some circuit design",
         image: "Four_Eyes.png",
       },
       {
         itemName: "Theory",
         attribuites: {},
-        description: "Learned through classes: Multivarible Calculus, Linear Algebra, Discrete Mathematics, Physics, Quantum Mechanics, Membrane Chemistry, Neuroscience, Introductory Finance & Economics, ",
+        description:
+          "Learned through classes: Multivarible Calculus, Linear Algebra, Discrete Mathematics, Physics, Quantum Mechanics, Membrane Chemistry, Neuroscience, Introductory Finance & Economics, ",
         image: "Retention.png",
       },
       {
         itemName: "Soft Skills",
         attribuites: {},
-        description: "Collaboration, Speaking, Teamwork, Critical Thinking, Support ",
+        description:
+          "Collaboration, Speaking, Teamwork, Critical Thinking, Support, Project Managment",
         image: "GoodNatured.png",
       },
     ],
