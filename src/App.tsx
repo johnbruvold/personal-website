@@ -19,7 +19,31 @@ function App() {
     ],
     Experience: [
       {
-        itemName: "Browhawn Lab",
+        itemName: "Data 8 Course Staff",
+        attribuites: {
+          START: "08/26",
+          END: "N/A",
+          POS: "COURSE STAFF",
+          LOC: "BERKELEY,CA",
+        },
+        description:
+          "Tutoring students in Data 8 with 1 on 1 help for a small group, grading coursework, and answering questions in class sessions of 40+ students. Strengthening student understanding of Python, visualization, probability, and inference; 87% of my students reported increased confidence in the material.",
+        image: "Comprehension_Perk.png",
+      },
+      {
+        itemName: "Design Therapeutics",
+        attribuites: {
+          START: "06/26",
+          END: "08/26",
+          POS: "RESEARCH INTERN",
+          LOC: "CARLSBAD,CA",
+        },
+        description:
+          "Developed and optimized an ex vivo corneal permeability assay using Ussing chambers and porcine corneas to screen compounds for the Fuchs Endothelial Corneal Dystrophy (FECD) program. Validated assay conditions with fluorescent dye controls on a BioTek Cytation 5, screened candidates, and coordinated LC-MS analysis with a CRO. Also engineered a qPCR gene expression assay, from cell culture and dosing to RNA extraction and ΔΔCt analysis in GraphPad Prism.",
+        image: "labcoat.png",
+      },
+      {
+        itemName: "Brohawn Lab",
         attribuites: {
           START: "08/25 ",
           END: "N/A",
@@ -36,10 +60,10 @@ function App() {
           START: "08/25 ",
           END: "N/A",
           LOC: "BERKELEY, CA",
-          POS: "CO-FOUNDER",
+          POS: "CO-FOUNDER & PM",
         },
         description:
-          "Organized club meetings and gathered funding to raise interest in Berkeley’s new Department of Neuroscience. Present novel and interesting papers in the Neuroscience field to a group of students. Aid companies by providing insight into the biological sciences",
+          "Organized club meetings and gathered funding to raise interest in Berkeley’s new Department of Neuroscience. Present novel and interesting papers in the Neuroscience field to a group of students. As a Project Manager, I lead student consulting teams on contract engagements with biotech and medtech companies: Ariadne Bio (market research for a novel apathy therapeutic across Parkinson's, Alzheimer's, and late-life depression), Onward Medical (a technology landscape assessment of sensors and wearables for spinal cord injury therapies), Cognixion (market and reimbursement analysis for a 510(k)-cleared smart EEG platform), and Soundbites PBC (a growth roadmap and $15M Series A fundraising strategy).",
         image: "Speech.png",
       },
       {
@@ -106,6 +130,16 @@ function App() {
         attribuites: { WHEN: "SPRING '25", TYPE: "ARTICLE",LNK:"https://sportsanalytics.studentorg.berkeley.edu/articles/perimeter-problem.html" },
         description: "The NBA doesn't have a good way to quantify perimeter defense, especially with a point value. I tried to make a new statistic by combining other stats together to measure a given players defensive value on the perimeter.",
         image: "Comprehension.png",
+      },
+      {
+        itemName: "Enzyme Class Predictor",
+        attribuites: {
+          WHEN: "SUMMER '26",
+          TYPE: "WEBSITE/MODEL",
+          LNK: "https://protein-prediction-myo5ouhu4bsclyjdhrweub.streamlit.app/",
+        },
+        description: "A Streamlit app that predicts which of the 7 Enzyme Commission (EC) classes a protein belongs to from its sequence alone. Sequences pulled from UniProtKB are turned into features like amino acid composition, molecular weight, hydrophobicity, secondary structure, and 3-mer frequencies, then classified with a Random Forest or SVM. Paste in a protein or DNA sequence and get a prediction with per-class probabilities. Done with scikit-learn, Biopython, and Streamlit.",
+        image: "LivingAnatomy.png",
       },
     ],
 
